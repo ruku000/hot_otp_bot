@@ -13188,10 +13188,7 @@ def _send_paid_wa_otp_dm(uid, otp, number):
         markup = None
 
     text = (
-        "✅ <b>WHATSAPP OTP RECEIVED</b>\n\n"
-        f"📱 <b>Number:</b> <code>{number_str}</code>\n"
-        f"🔐 <b>OTP:</b> <code>{otp_display}</code>\n\n"
-        "Use this code to complete your WhatsApp verification."
+        "{flag} {number} {svc_emoji} {svc}"
     )
     try:
         _throttle_dm_send()
